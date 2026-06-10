@@ -1,7 +1,11 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import { ref } from 'vue'
+import MarsMap from './components/MarsMap.vue'
+const map = ref(null)
 </script>
 
 <template>
-  <HelloWorld />
+  <div>
+    <MarsMap ref="map" />
+  </div>
 </template>
